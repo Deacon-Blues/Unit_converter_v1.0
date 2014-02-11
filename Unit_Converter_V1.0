@@ -1,0 +1,25 @@
+__author__ = 'Deacon Blues' \
+
+units = ["C", "CELSIUS", "F", "FAHRENHEIT"]
+
+
+# Gets temp to be converted, sets to int form.
+def temp_input():
+    return int(input("What is your starting temperature: "))
+
+
+# Runs program function
+def run():
+    temp = temp_input()
+    print('What would you like to convert to?')
+    convert_to = input('[F]ahrenheit or [C]elsius: ')
+    if convert_to.upper() == units[0] or units[1]:
+        temp_celsius = (temp - 32) * (5 / 9)
+        print(temp, 'F is ', round(temp_celsius), 'C')
+    elif convert_to.upper() == units[2] or units[3]:
+        temp_fahrenheit = temp * (9 / 5) + 32
+        print(temp, 'C is ', round(temp_fahrenheit), 'F')
+    else:
+        print('Error')
+run()
+C:\Users\Terrance\PycharmProjects\Unit converter\Unit_Converter_V1.0.py
