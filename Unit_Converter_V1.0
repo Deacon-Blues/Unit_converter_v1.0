@@ -22,4 +22,3 @@ def run():
     else:
         print('Error')
 run()
-C:\Users\Terrance\PycharmProjects\Unit converter\Unit_Converter_V1.0.py
