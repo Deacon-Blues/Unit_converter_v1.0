@@ -1,1 +1,2 @@
+# List containing possible user conversion unit inputs
 units = ["C", "CELSIUS", "F", "FAHRENHEIT"]
